@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <h1>AJAX Weather App</h1>
+            <input type="text" placeholder="City"/>
+            <button>Get Weather</button>
+            <form action="format">
+                <label for="length">
+                <select name="length" id="length" required>
+                  <option value="now">Current Forcast</option>
+                  <option value="24hr">24 hours Forcast</option>
+                  <option value="5d">5 Days Forcast</option>
+                  <option value="7d">7 Days Forcast</option>
+                </label>
+                </select><a> RANGE</a>
+              </form>
+        </div>
+        <div class="two">   
+            <p><b>LOCATION:</b><span id="city">  </span></p>
+            <p><b>TEMPERATURE:</b><span id="temperature">  </span></p>
+
+        </div>
+        <div class="three">
+            <p><b>FEELS-LIKE:</b><span id="feel"></span>  </p>
+            <p><b>WEATHER: </b><span id="weather"></span>  </p>  
+
+        </div>
+        <div class="four">
+            <aside>
+                <ul></ul>
+            </aside>
+        </div>
+      </div> 
+
+</body>
+</html>
