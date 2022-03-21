@@ -13,11 +13,14 @@
     <script defer src="./js/script.js"></script>
 </head>
 <body>
-    <div class="container">
+    <h1>AJAX Weather App</h1>
+    <div id="container">
+        <!-- <div class="reest">            
+            <button onClick="window.location.href=window.location.href">Refresh Page</button>
+        </div> -->
         <div class="one">
-            <h1>AJAX Weather App</h1>
             <input type="text" placeholder="City"/>
-            <button>Get Weather</button>
+            <button id="search-button">Get Weather</button>
             <form action="format">
                 <label for="length">
                 <select name="length" id="length" required>
@@ -26,25 +29,24 @@
                   <option value="5d">5 Days Forcast</option>
                   <option value="7d">7 Days Forcast</option>
                 </label>
-                </select><a> RANGE</a>
+                </select><a><strong> RANGE</strong></a>
               </form>
         </div>
+        <div class="five"></div>
         <div class="two">   
             <p><b>LOCATION:</b><span id="city">  </span></p>
             <p><b>TEMPERATURE:</b><span id="temperature">  </span></p>
-
         </div>
         <div class="three">
             <p><b>FEELS-LIKE:</b><span id="feel"></span>  </p>
-            <p><b>WEATHER: </b><span id="weather"></span>  </p>  
-
+            <p><b>WEATHER: </b><span id="weather"></span>  </p>  <br />
+            <button onClick="window.location.href=window.location.href">Reset / New Search</button>
         </div>
         <div class="four">
             <aside>
-                <ul></ul>
             </aside>
         </div>
       </div> 
-
+      <footer> </footer>
 </body>
 </html>

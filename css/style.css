@@ -1,29 +1,46 @@
 
+h1{
+  justify-content:space-around;
+  text-align: center;
+  text-shadow: 4px 2px 6px rgba(11, 76, 119, 0.91);
+}
+
 body{
+  font-family: Arial, Helvetica, sans-serif;
  background-color:rgba(34, 53, 53, 0.24);
  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-blue-arc-weather-background-image_253195.jpg");
  background-size:cover;
-
 }
+
 img{
   
     position: relative;
-    top: 10px;
-    /* inline-size: 10%; */
+    top: 40px;
+    inline-size: 30%
+
 }
-.container {
-  font-family: Arial, Helvetica, sans-serif;
+#container {
     display: grid;
     background-color: rgba(38, 99, 190, 0.637);
     margin: 50px;
     grid-template-areas:
+     "five five five five"
       "one one one one"
       "two two three three"
-      "four four four four"
       "four four four four";
     opacity: 0.9;
+    box-shadow: 10px 5px 5px rgb(7, 60, 110);
+
   }
-  
+  .five{
+    grid-area: five;
+    height: 40px;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 4px 3px 6px rgba(10, 90, 143, 0.91);
+    margin-top: 10px;
+  }
   .one {
     background-color: rgba(153, 187, 238, 0.637);
     grid-area: one;
@@ -37,7 +54,6 @@ img{
     background-color: rgba(153, 187, 238, 0.637);
     grid-area: two;
     text-align: center;
-    font-size: small;
     justify-content:space-around;
 }
   
@@ -45,7 +61,6 @@ img{
     background-color: rgba(153, 187, 238, 0.637);
     grid-area: three;
     text-align: center;
-    font-size: small;
     justify-content:space-around;
 
   }
@@ -55,13 +70,18 @@ img{
     grid-area: four;
     display: flex;
     justify-content:space-evenly;
+    align-content:flex-start ;
+    margin-bottom: 50px;
+    
   }
 button{
   font-size: 17px;
     color: #A4ECFF; 
     background: #114365; 
+    margin-bottom: 10px;
 }
 input, form {
+  margin-top: 10px;
 font-size: large;
 }
 
@@ -72,8 +92,12 @@ font-size: large;
 
   li {
     list-style-type: none;
-    height:40px;
+    position: relative;
+    margin-bottom: -50px;
   }
-  ul {
-    list-style-type: square;
-  }
+
+  
+footer{
+  justify-content:space-around;
+  text-align: center;
+}
