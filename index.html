@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="./css/style.css">
     <script
     src="https://code.jquery.com/jquery-3.6.0.js"
@@ -15,38 +15,38 @@
 <body>
     <h1>AJAX Weather App</h1>
     <div id="container">
-        <!-- <div class="reest">            
-            <button onClick="window.location.href=window.location.href">Refresh Page</button>
-        </div> -->
         <div class="one">
             <input type="text" placeholder="City"/>
             <button id="search-button">Get Weather</button>
             <form action="format">
-                <label for="length">
                 <select name="length" id="length" required>
                   <option value="now">Current Forcast</option>
-                  <option value="24hr">24 hours Forcast</option>
-                  <option value="5d">5 Days Forcast</option>
-                  <option value="7d">7 Days Forcast</option>
+                  <option value="3d">3 Day Forcast</option>
+                  <option value="5d">5 Day Forcast</option>
+                  <option value="7d">7 Day Forcast</option>
+                  <option value="12hr">12 Hour Forcast</option>
+                  <option value="24hr">24 Hour Forcast</option>
                 </label>
-                </select><a><strong> RANGE</strong></a>
+                </select>
               </form>
         </div>
         <div class="five"></div>
-        <div class="two">   
-            <p><b>LOCATION:</b><span id="city">  </span></p>
-            <p><b>TEMPERATURE:</b><span id="temperature">  </span></p>
+        <div class="two">
+            <p><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CURRENT</b></p> 
+            <p>TEMP:<span id="temperature">  </span></p>   
+            <p>WIND:<span id="wind">  </span></p>
         </div>
         <div class="three">
-            <p><b>FEELS-LIKE:</b><span id="feel"></span>  </p>
-            <p><b>WEATHER: </b><span id="weather"></span>  </p>  <br />
-            <button onClick="window.location.href=window.location.href">Reset / New Search</button>
+            <p><b>WEATHER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></p> 
+            <p>HUMIDITY:<span id="humidity"></span>  </p>
+            <p>WEATHER:<span id="weather"></span>  </p>  <br/>
         </div>
         <div class="four">
             <aside>
+                <h2 id="title"></h2>
             </aside>
         </div>
       </div> 
-      <footer> </footer>
+      <footer></footer>
 </body>
 </html>
