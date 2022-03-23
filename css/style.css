@@ -13,16 +13,14 @@ h3{
   text-align:center;
 }
 body{
- font-family: Arial, Helvetica, sans-serif;
- background-color:rgba(34, 53, 53, 0.24);
- background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-blue-arc-weather-background-image_253195.jpg");
- background-size:cover;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-blue-arc-weather-background-image_253195.jpg");
+  background-size:cover;
 }
 
 img{
     position: relative;
     top: 25px;
-    /* inline-size: 30% */
 
 }
 #container {
@@ -31,7 +29,7 @@ img{
     margin: auto;
     width: 500px;
     grid-template-areas:
-     "five five five five"
+      "five five five five"
       "one one one one"
       "two two three three"
       "four four four four";

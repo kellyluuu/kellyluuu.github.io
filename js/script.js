@@ -20,9 +20,16 @@ function hr (x){
     return dateObject.toLocaleString("en-US", {hour: "numeric"}) 
 }
 
+$input.on("keyup",(event) =>{
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   $button.click();
+  }
+});
+
 $button.on("click", (event) => {
     event.preventDefault()
-    const searchTerm = $input.val();
+    const searchTerm = $input.val(); 
     $one.hide()
     $.ajax(`https://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&appid=${api}&units=imperial`)
         .then((data) => {
@@ -82,6 +89,8 @@ $button.on("click", (event) => {
                     }  
                 }}
             )
+        }).catch(()=>{
+            $five.html(`&nbsp;&nbsp; Invalid City or Zip &nbsp; <button onClick="window.location.href=window.location.href">New Search</button>`)
         })
 })
 

@@ -9,4 +9,4 @@
 
 <!-- Super Bonus = Deploy your project to the web using Github Pages! -->
 
-[Deploy site](https://pages.github.com)
+[Deploy site](https://kellyluuu.github.io/)
